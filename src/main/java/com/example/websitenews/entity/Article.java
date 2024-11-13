@@ -1,10 +1,13 @@
 package com.example.websitenews.entity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDateTime;
-
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "articles")
 @FieldDefaults(level = AccessLevel.PRIVATE)

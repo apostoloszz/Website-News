@@ -8,14 +8,30 @@ spring:
     url: jdbc:mysql://localhost:3306/news?useSSL=false&serverTimezone=UTC
     username: root
     password: 123456
-  jpa:
-    hibernate:
-      ddl-auto: update
+  mail:
+    host: smtp.fpt.edu.vn
+    port: 587
+    username: "huynqph45088@fpt.edu.vn"
+    password: "wrdw dnsp symn jlzj"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jpa:
+  hibernate:
+    ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         format_sql: true
-  mvc:
-    view:
-      prefix: /WEB-INF/views/
-      suffix: .jsp
+
+mvc:
+  view:
+    prefix: /WEB-INF/views/
+    suffix: .jsp
+
+
+

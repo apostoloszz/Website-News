@@ -1,10 +1,14 @@
 package com.example.websitenews.entity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDateTime;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "article_views")
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -22,7 +26,5 @@ public class ArticleView {
 
     @Column(name = "last_viewed")
     LocalDateTime lastViewed;
-
-    // Constructors, Getters, and Setters
 }
 
